@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor_a: #000000;
+    --cor_b: #2D2D2D;
+    --cor_c: #FFFFFF;
+    --cor_d: #81c3d7;
+    --cor_e: #16425b;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #16425b;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    color: var(--cor_c);
+}
+
+.divlogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+    transition: .4s;
+    width: 150px;
+}
+
+
+.logo {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.span {
+    background-color: var(--cor_c);
+    height: 40px;
+    width: 3px;
+    border-radius: 20px;
+}
+
+.img-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: var(--cor_b);
+    display: grid;
+    box-shadow: 5px 5px var(--cor_e);
+}
+
+.img-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.img-container2 {
+    width: 1200px;
+    height: 650px;
+    border-radius: 15px;
+    background-color: var(--cor_b);
+    display: grid;
+    box-shadow: 5px 5px var(--cor_e);
+}
+
+.img-container2 img {
+    width: 1200px;
+    height: 650px;
+    border-radius: 15px;
+}
+
+.small-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 50px;
+    transition: .5s;
+    height: 300px;
+    width: 1100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.small-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px var(--cor_a);
+    border-radius: 20px;
+
+}
+
+.small2-container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    column-gap: 50px;
+    transition: .5s;
+    height: 300px;
+    width: 1100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.small2-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.219);
+    border-radius: 20px;
+
+}
+
+.container {
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 50px;
+    justify-items: center;
+    padding-bottom: 50px;
+    justify-content: center;
+    animation: trasitionIn 0.75s;
+}
+
+.container2 {
+    padding-top: 50px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    animation: trasitionIn 0.75s;
+    justify-items: center;
+    row-gap: 50px;
+    padding-bottom: 50px;
+
+}
+
+.container2 p {
+    width: 1200px;
+}
+
+@keyframes trasitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+
+}
+
+.title {
+    font-size: 45px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 900;
+    color: var(--cor_a);
+    text-shadow: 2px 2px #81c3d7;
+}
+
+nav .titlesNav {
+    transform: scale(1);
+    transition: .2s;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.texts {
+    display: grid;
+    width: 760px;
+
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.newsMenu {
+    display: grid;
+    width: 180px;
+    height: 200px;
+    background-color: var(--cor_e);
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+
+}
+
+.newsMenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+li:hover ul.newsMenu {
+    opacity: 1;
+    visibility: visible;
+    left: -40px;
+    top: 40px;
+}
+
+.titles {
+    width: 1200px;
+    display: grid;
+
+}
+
+
+footer {
+    display: flex;
+    height: 40px;
+    background-color: var(--cor_e);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
